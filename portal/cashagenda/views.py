@@ -14,7 +14,7 @@ def dasboard(request):
 class LoginUser(DataMixin, LoginView):
 
     form_class = AuthenticationForm 
-    tempLlate_name = 'cashagenda/login.html'
+    template_name = 'cashagenda/login.html'
 
     def get_context_data (self, *, object_list=None, **kwargs): 
         context = super().get_context_data (**kwargs) 
